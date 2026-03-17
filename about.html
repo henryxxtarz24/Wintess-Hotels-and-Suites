@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Wintess Garden and Suites</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
+        .page-hero {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('http://static.photos/nature/1920x600/20');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center space-x-2">
+                        <i data-lucide="building-2" class="w-8 h-8 text-amber-600"></i>
+                        <div>
+                            <span class="text-xl font-bold text-gray-900 block leading-tight">Wintess Garden</span>
+                            <span class="text-xs text-amber-600 uppercase tracking-wider">and Suites</span>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-amber-600 transition">Home</a>
+                    <a href="about.html" class="text-amber-600 font-medium">About Us</a>
+                    <a href="rooms.html" class="text-gray-600 hover:text-amber-600 transition">Rooms</a>
+                    <a href="index.html#contact" class="text-gray-600 hover:text-amber-600 transition">Contact</a>
+                    <a href="rooms.html" class="bg-amber-600 text-white px-6 py-2.5 rounded-full hover:bg-amber-700 transition shadow-lg">
+                        Check Availability
+                    </a>
+                </div>
+
+                <div class="md:hidden flex items-center">
+                    <button onclick="toggleMobileMenu()" class="text-gray-600 hover:text-amber-600 focus:outline-none">
+                        <i data-lucide="menu" class="w-6 h-6" id="menu-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="index.html" class="block px-3 py-2 text-gray-600 hover:bg-gray-50 rounded-md">Home</a>
+                <a href="about.html" class="block px-3 py-2 text-amber-600 font-medium bg-amber-50 rounded-md">About Us</a>
+                <a href="rooms.html" class="block px-3 py-2 text-gray-600 hover:bg-gray-50 rounded-md">Rooms</a>
+                <a href="index.html#contact" class="block px-3 py-2 text-gray-600 hover:bg-gray-50 rounded-md">Contact</a>
+                <a href="rooms.html" class="block px-3 py-2 bg-amber-600 text-white rounded-md text-center mt-4">Check Availability</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero pt-32 pb-20 px-4">
+        <div class="max-w-7xl mx-auto text-center text-white">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">About Wintess Garden and Suites</h1>
+            <p class="text-xl text-gray-200 max-w-2xl mx-auto">Your trusted hospitality partner in Ifite, Awka since 2015</p>
+        </div>
+    </section>
+
+    <!-- Our Story -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="text-amber-600 font-semibold tracking-wide uppercase text-sm">Our Story</span>
+                    <h2 class="text-4xl font-bold text-gray-900 mt-3 mb-6">A Legacy of Comfort & Hospitality</h2>
+                    <p class="text-gray-600 text-lg leading-relaxed mb-6">
+                        Founded in 2015, Wintess Garden and Suites began with a simple mission: to provide quality, affordable accommodation for travelers visiting Awka. Located in the serene Ifite area, we've grown from a small guesthouse to a recognized 3-star hotel serving over 900 satisfied guests.
+                    </p>
+                    <p class="text-gray-600 text-lg leading-relaxed mb-6">
+                        Our name reflects our commitment to being a "witness" to your memorable stays—whether you're a parent visiting your child at UNIZIK, a business traveler attending meetings in the capital, or a tourist exploring the rich culture of Anambra State.
+                    </p>
+                    <p class="text-gray-600 text-lg leading-relaxed">
+                        We combine modern amenities with traditional Nigerian hospitality, ensuring every guest feels at home while enjoying the comfort and convenience they deserve.
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <img src="http://static.photos/interior/400x500/21" alt="Hotel Lobby" class="rounded-2xl shadow-lg w-full h-64 object-cover mt-8">
+                    <img src="http://static.photos/nature/400x500/22" alt="Garden" class="rounded-2xl shadow-lg w-full h-64 object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16 bg-amber-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-4xl font-bold mb-2">9+</div>
+                    <div class="text-amber-100">Years of Service</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold mb-2">900+</div>
+                    <div class="text-amber-100">Happy Guests</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold mb-2">4.0</div>
+                    <div class="text-amber-100">Star Rating</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold mb-2">30+</div>
+                    <div class="text-amber-100">Comfortable Rooms</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Values -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-amber-600 font-semibold tracking-wide uppercase text-sm">Our Values</span>
+                <h2 class="text-3xl font-bold text-gray-900 mt-2">What Makes Us Different</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-sm text-center">
+                    <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i data-lucide="heart" class="w-8 h-8 text-amber-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Genuine Hospitality</h3>
+                    <p class="text-gray-600">We treat every guest like family, providing personalized attention and warm Nigerian hospitality that makes you feel truly welcome.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-sm text-center">
+                    <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i data-lucide="sparkles" class="w-8 h-8 text-amber-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Cleanliness First</h3>
+                    <p class="text-gray-600">Immaculate rooms and common areas are our priority. We maintain rigorous cleaning standards to ensure your health and comfort.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-sm text-center">
+                    <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i data-lucide="banknote" class="w-8 h-8 text-amber-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Affordable Quality</h3>
+                    <p class="text-gray-600">Premium comfort doesn't have to break the bank. We offer competitive rates without compromising on service or amenities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Info -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1">
+                    <img src="http://static.photos/cityscape/800x600/30" alt="Awka Location" class="rounded-2xl shadow-2xl w-full object-cover h-[400px]">
+                </div>
+                <div class="order-1 lg:order-2">
+                    <span class="text-amber-600 font-semibold tracking-wide uppercase text-sm">Location</span>
+                    <h2 class="text-3xl font-bold text-gray-900 mt-2 mb-6">Perfectly Positioned in Ifite, Awka</h2>
+                    <p class="text-gray-600 text-lg mb-6">
+                        Our strategic location in Ifite puts you at the center of everything Awka has to offer. Whether you're visiting Nnamdi Azikiwe University, attending business meetings, or exploring local markets, Wintess Garden and Suites provides the perfect base.
+                    </p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-amber-100 rounded-full flex items-center justify-center mr-4 mt-1">
+                                <i data-lucide="graduation-cap" class="w-5 h-5 text-amber-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Near UNIZIK</h4>
+                                <p class="text-gray-600 text-sm">5 minutes from Nnamdi Azikiwe University main campus</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-amber-100 rounded-full flex items-center justify-center mr-4 mt-1">
+                                <i data-lucide="shopping-bag" class="w-5 h-5 text-amber-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Market Access</h4>
+                                <p class="text-gray-600 text-sm">Close to Aroma Market and other commercial centers</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-amber-100 rounded-full flex items-center justify-center mr-4 mt-1">
+                                <i data-lucide="car" class="w-5 h-5 text-amber-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Transport Links</h4>
+                                <p class="text-gray-600 text-sm">Easy access to major roads and transport terminals</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team/Staff Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Dedicated Team</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Professional, friendly, and always ready to serve you</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm">
+                    <img src="http://static.photos/people/400x300/40" alt="Manager" class="w-full h-64 object-cover">
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-gray-900">Mr. Chinedu Okonkwo</h3>
+                        <p class="text-amber-600 mb-3">General Manager</p>
+                        <p class="text-gray-600 text-sm">With over 15 years in hospitality management, Chinedu ensures every guest receives VIP treatment.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm">
+                    <img src="http://static.photos/people/400x300/41" alt="Front Desk" class="w-full h-64 object-cover">
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-gray-900">Adaobi Nwankwo</h3>
+                        <p class="text-amber-600 mb-3">Front Desk Manager</p>
+                        <p class="text-gray-600 text-sm">Adaobi's warm smile and efficiency make check-ins a breeze for our valued guests.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm">
+                    <img src="http://static.photos/people/400x300/42" alt="Housekeeping" class="w-full h-64 object-cover">
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-gray-900">Grace Emmanuel</h3>
+                        <p class="text-amber-600 mb-3">Housekeeping Supervisor</p>
+                        <p class="text-gray-600 text-sm">Grace leads our housekeeping team to maintain our high cleanliness standards.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i data-lucide="building-2" class="w-8 h-8 text-amber-600"></i>
+                        <div>
+                            <span class="text-xl font-bold text-white block">Wintess Garden</span>
+                            <span class="text-xs text-amber-600 uppercase tracking-wider">and Suites</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-4 max-w-sm">
+                        Providing comfortable and affordable accommodation in Ifite, Awka. Your satisfaction is our priority.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-amber-600 transition">Home</a></li>
+                        <li><a href="about.html" class="hover:text-amber-600 transition">About Us</a></li>
+                        <li><a href="rooms.html" class="hover:text-amber-600 transition">Rooms</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i data-lucide="map-pin" class="w-5 h-5 mr-2 text-amber-600 mt-1"></i>
+                            <span>Ifite, Awka, Anambra State</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="phone" class="w-5 h-5 mr-2 text-amber-600"></i>
+                            <span>+234 123 456 7890</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center">
+                <p class="text-sm text-gray-500">&copy; 2024 Wintess Garden and Suites. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const icon = document.getElementById('menu-icon');
+            
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+                icon.setAttribute('data-lucide', 'x');
+            } else {
+                menu.classList.add('hidden');
+                icon.setAttribute('data-lucide', 'menu');
+            }
+            lucide.createIcons();
+        }
+        
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('shadow-md');
+            } else {
+                navbar.classList.remove('shadow-md');
+            }
+        });
+    </script>
+</body>
+</html>
